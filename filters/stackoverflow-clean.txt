@@ -1,0 +1,5 @@
+! ----- STACKOVERFLOW ----- !
+
+! StackOverflow: hide hot questions
+	stackoverflow.com,stackexchange.com##div#hot-network-questions
+	stackoverflow.com,stackexchange.com##div#feed-link

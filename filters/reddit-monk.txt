@@ -1,0 +1,20 @@
+! ----- REDDIT ----- !
+
+! Reddit: hide all feeds
+	reddit.com##main#main-content:has(shreddit-feed)
+
+! Reddit: hide all media
+	reddit.com##[slot="post-media-container"]
+	reddit.com##faceplate-img
+
+! Reddit: clean left side bar
+	! reddit.com##flex-left-nav-container
+	reddit.com##reddit-sidebar-nav
+
+! Reddit: hide right side bar
+	reddit.com##+js(user-modify-reddit-css.js)
+	reddit.com###right-sidebar-container
+    
+! Reddit: hide trending on search
+	reddit.com###reddit-trending-searches-partial-container
+	reddit.com##div:has(.text-neutral-content-weak):has(svg[name="trend"])

@@ -1,0 +1,50 @@
+! ----- FACEBOOK DESKTOP ----- !
+
+! Facebook: hide feed (need to ignore on marketplace)
+	facebook.com##div[role="main"]:has-text("Create a post")
+
+! Hide contacts sidebar
+	!facebook.com##div[role="complementary"] > div:has-text(/Contacts/)
+	facebook.com##div[role="complementary"]
+
+! Clean nav sidebar
+	facebook.com##li:has-text("Meta AI")
+	facebook.com##li:has-text("Video")
+	facebook.com##li:has-text("Ads Manager")
+	facebook.com##li:has-text("Chat with AIs")
+	facebook.com##li:has-text("Dating")
+	facebook.com##li:has-text("Gaming Video")
+	facebook.com##li:has-text("Messenger")
+	facebook.com##li:has-text("Messenger Kids")
+	facebook.com##li:has-text("Meta Quest 3S")
+	facebook.com##li:has-text("Play games")
+	facebook.com##li:has-text("Ray-Ban Meta")
+	facebook.com##li:has-text("Reels")
+	!facebook.com##div > div:has-text("Your shortcuts")
+	facebook.com##div[role="navigation"] > div > div > div > div > div > div > div:nth-child(2)
+
+! Hide footer
+	facebook.com##div[role="navigation"] > div > div > div > div > div > div:nth-child(2)
+
+! Clean top tabs
+	facebook.com##li:has(a[aria-label="Video"])
+	facebook.com##li:has(a[aria-label="Groups"])
+
+
+
+! ----- FACEBOOK MOBILE ----- !
+
+! Hide home feed
+	facebook.com##div#screen-root#div[data-type="vscroller"]
+
+! Clean up top tabs
+	facebook.com##div[aria-label*="messages"]
+	facebook.com##div[aria-label*="reels"]
+
+! Hide menu items
+	facebook.com##div[aria-label="Messages"]
+	facebook.com##div[aria-label="Groups"]
+	facebook.com##div[aria-label="Reels"]
+	facebook.com##div[aria-label="Dating"]
+	facebook.com##div[aria-label="Games"]
+	facebook.com##div[aria-label="Ads Manager"]

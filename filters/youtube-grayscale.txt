@@ -1,0 +1,25 @@
+! ----- YOUTUBE DESKTOP ----- !
+
+youtube.com##ytd-app:not([is-watch-page]):style(
+  filter: 
+    grayscale(100%) 
+    brightness(100%) 
+    saturate(60%) 
+    !important
+)
+
+youtube.com##ytd-masthead div:style(
+  filter: 
+    grayscale(100%) 
+    brightness(100%) 
+    saturate(60%) 
+    !important
+)
+
+youtube.com##ytd-watch-flexy #columns:style(
+  filter: 
+    grayscale(100%) 
+    brightness(85%) 
+    saturate(60%) 
+    !important
+)

@@ -1,0 +1,18 @@
+! ----- FACEBOOK DESKTOP ----- !
+
+! Grayscale general UI (text, buttons, chrome)
+facebook.com##div[role="main"] *:style(filter: grayscale(100%) !important;)
+
+! Force feed thumbnails to stay grayscale
+facebook.com##div[role="feed"] img:style(filter: grayscale(100%) !important;)
+facebook.com##div[role="feed"] video:style(filter: grayscale(100%) !important;)
+
+! Remove grayscale inside opened media dialogs
+facebook.com##div[role="dialog"],
+facebook.com##div[role="dialog"] *:style(filter: none !important;)
+
+! ----- FACEBOOK MOBILE ----- !
+
+! Grayscale UI containers
+facebook.com##body#app-body:style(filter: grayscale(100%) !important;)
+

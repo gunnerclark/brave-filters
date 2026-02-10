@@ -33,7 +33,7 @@ youtube.com###guide [title="Shorts"]
 ! ----- YOUTUBE MOBILE ----- !
 
 ! grayscale the entire page except for the watch page
-youtube.com##ytm-app:not([is-watch-page]):style(
+m.youtube.com##ytm-app:not([is-watch-page]):style(
   filter: 
     grayscale(100%) 
     brightness(100%) 

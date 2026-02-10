@@ -1,0 +1,20 @@
+! ----- TWITCH ----- !
+
+! Twitch: hide Go Ad-Free for Free button
+	twitch.tv##div:has-text("Go Ad-Free for Free")
+
+
+	
+! ----- TWTICH MOBILE ----- !
+
+! Twitch: hide live feed
+	m.twitch.tv##main > div:has-text("Twitch")
+
+! Twitch: hide Browse feed
+	m.twitch.tv##main > div:has-text("Categories")
+
+! Twitch: hide Open App button
+	m.twitch.tv##a:has-text("Open App")
+
+! Twitch: hide Activity button
+	m.twitch.tv##a:has-text("Activity")

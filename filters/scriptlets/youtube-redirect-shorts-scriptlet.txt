@@ -1,0 +1,6 @@
+! ----- YOUTUBE DESKTOP ----- !
+
+! redirect shorts to watch
+	youtube.com##+js(user-redirect-youtube-shorts.js)
+	m.youtube.com##+js(user-redirect-youtube-shorts.js)
+	www.youtube.com##+js(user-redirect-youtube-shorts.js)

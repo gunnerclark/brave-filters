@@ -1,0 +1,88 @@
+! ----- TWITCH DESKTOP ----- !
+
+! Header, top nav
+twitch.tv##header:style(filter: grayscale(1) saturate(0.6) !important)
+twitch.tv##.top-nav:style(filter: grayscale(1) saturate(0.6) !important)
+
+! Sidebar / chat
+twitch.tv##.chat:style(filter: grayscale(1) saturate(0.6) !important)
+twitch.tv##.side-nav:style(filter: grayscale(1) saturate(0.6) !important)
+
+! Thumbnails / recommendations below the player
+twitch.tv##.RecommendedVideosContainer:style(filter: grayscale(1) saturate(0.6) !important)
+
+! Home feed
+twitch.tv##div[data-a-target="front-page-carousel"]:style(filter: grayscale(1) saturate(0.6) !important)
+twitch.tv##section#front-page-main-content:style(filter: grayscale(1) saturate(0.6) !important)
+
+! Channel info content (safe)
+twitch.tv##.channel-info-content *:style(filter: grayscale(1) saturate(0.6) !important)
+
+! Right-column chat visuals
+twitch.tv##[data-a-target="right-column-chat-bar"] img:style(filter: grayscale(1) saturate(0.6) !important)
+twitch.tv##[data-a-target="right-column-chat-bar"] span:style(filter: grayscale(1) saturate(0.6) !important)
+twitch.tv##[data-a-target="right-column-chat-bar"] svg:style(filter: grayscale(1) saturate(0.6) !important)
+
+
+! ----- TWTICH MOBILE ----- !
+
+! grayscale twitch
+	m.twitch.tv##body:style(filter: grayscale(1) saturate(0.6) !important)
+
+! grayscale Title bar
+	!m.twitch.tv##[aria-label="Go to the Twitch home page"]:style(filter: grayscale(1) saturate(0.6) !important)
+	!m.twitch.tv##header#twilight-sticky-header-root:style(filter: grayscale(1) saturate(0.6) !important)
+	!m.twitch.tv##a:has-text("Open App"):style(filter: grayscale(1) saturate(0.6) !important)
+    !m.twitch.tv##div > h1:has-text("Following"):style(filter: grayscale(1) saturate(0.6) !important)
+
+! grayscale Section selector
+	!m.twitch.tv##main > div:has-text("Home"):style(filter: grayscale(1) saturate(0.6) !important)
+
+! grayscale live feed
+	!m.twitch.tv##main > div:has-text("Twitch"):style(filter: grayscale(1) saturate(0.6) !important)
+
+! grayscale Browse feed
+	!m.twitch.tv##main > div:has-text("Categories"):style(filter: grayscale(1) saturate(0.6) !important)
+
+! grayscale Nav bar
+!	!m.twitch.tv##div:has-text("Home"):style(filter: grayscale(1) saturate(0.6) !important)
+
+
+
+! === m.twitch.tv mobile — safe grayscale (chat + live channels added) ===
+
+! === Title / header / nav bar ===
+!m.twitch.tv##[aria-label="Go to the Twitch home page"]:style(filter: grayscale(1) saturate(0.6) !important)
+!m.twitch.tv##header#twilight-sticky-header-root:style(filter: grayscale(1) saturate(0.6) !important)
+!m.twitch.tv##a:has-text("Open App"):style(filter: grayscale(1) saturate(0.6) !important)
+
+! === Section selectors / banners ===
+!m.twitch.tv##main > div:has-text("Home"):style(filter: grayscale(1) saturate(0.6) !important)
+!m.twitch.tv##main > div:has-text("Twitch"):style(filter: grayscale(1) saturate(0.6) !important)
+!m.twitch.tv##main > div:has-text("Categories"):style(filter: grayscale(1) saturate(0.6) !important)
+
+! === Recommended videos / thumbnails / icons ===
+!m.twitch.tv##[data-a-target="recommended-videos"] img:style(filter: grayscale(1) saturate(0.6) !important)
+!m.twitch.tv##[data-a-target="recommended-videos"] span:style(filter: grayscale(1) saturate(0.6) !important)
+!m.twitch.tv##[data-a-target="recommended-videos"] svg:style(filter: grayscale(1) saturate(0.6) !important)
+
+! === Avatars / badges in feed (safe) ===
+!m.twitch.tv##img:has([alt]):style(filter: grayscale(1) saturate(0.6) !important)
+!m.twitch.tv##span:has([aria-label]):style(filter: grayscale(1) saturate(0.6) !important)
+!m.twitch.tv##svg:has([aria-label]):style(filter: grayscale(1) saturate(0.6) !important)
+
+! === Chat feed visuals (avatars, badges, emotes, messages) ===
+!m.twitch.tv##[aria-label="Chat"] img:style(filter: grayscale(1) saturate(0.6) !important)
+!m.twitch.tv##[aria-label="Chat"] span:style(filter: grayscale(1) saturate(0.6) !important)
+!m.twitch.tv##[aria-label="Chat"] svg:style(filter: grayscale(1) saturate(0.6) !important)
+!m.twitch.tv##[aria-label="Chat"] div:has-text(""):style(filter: grayscale(1) saturate(0.6) !important)
+
+! === "Your Live Channels" list visuals ===
+!m.twitch.tv##[data-a-target="side-nav-live-channels"] img:style(filter: grayscale(1) saturate(0.6) !important)
+!m.twitch.tv##[data-a-target="side-nav-live-channels"] span:style(filter: grayscale(1) saturate(0.6) !important)
+!m.twitch.tv##[data-a-target="side-nav-live-channels"] svg:style(filter: grayscale(1) saturate(0.6) !important)
+!m.twitch.tv##[data-a-target="side-nav-live-channels"] div:has-text(""):style(filter: grayscale(1) saturate(0.6) !important)
+
+! === Leave the player fully untouched ===
+! Do NOT apply filters to player or its parent container
+! Player overlay selector: [data-a-target="player-overlay-click-handler"]

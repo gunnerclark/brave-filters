@@ -1,0 +1,19 @@
+! ----- REDDIT DESKTOP ----- !
+
+! posts
+  reddit.com##shreddit-post img:style(filter: grayscale(1) saturate(0.6) !important)
+  reddit.com##shreddit-post video:style(filter: grayscale(1) saturate(0.6) !important)
+  reddit.com##shreddit-post:style(filter: grayscale(1) saturate(0.6) !important)
+
+! comments
+  reddit.com##shreddit-comment-tree:style(filter: grayscale(1) saturate(0.6) !important)
+  reddit.com##[data-testid="comment"]:style(filter: grayscale(1) saturate(0.6) !important)
+  reddit.com##[data-testid="comment-tree"]:style(filter: grayscale(1) saturate(0.6) !important)
+
+! ui chrome
+  reddit.com##header:style(filter: grayscale(1) saturate(0.6) !important)
+  reddit.com##nav:style(filter: grayscale(1) saturate(0.6) !important)
+  reddit.com##aside:style(filter: grayscale(1) saturate(0.6) !important)
+
+! grid background
+  reddit.com##.grid-container:style(filter: grayscale(1) saturate(0.6) !important)  

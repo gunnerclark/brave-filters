@@ -1,0 +1,5 @@
+! ----- REDDIT ----- !
+
+! Reddit: hide right side bar
+	reddit.com##+js(user-modify-reddit-css.js)
+	reddit.com###right-sidebar-container

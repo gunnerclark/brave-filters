@@ -1,0 +1,73 @@
+! ----- YOUTUBE DESKTOP ----- !
+
+! hide home page
+	youtube.com##[page-subtype="home"]
+
+! hide recommended videos (but not timestamps?)
+	youtube.com##div#panels
+	youtube.com##div#chat-container
+	youtube.com##div##donation-shelf
+	youtube.com##div#related
+
+! hide the Shorts button
+	youtube.com###guide [title="Shorts"]
+
+! hide thumbnails
+	youtube.com##yt-thumbnail-view-model
+	youtube.com##ytm-shorts-lockup-view-model > a
+	youtube.com##yt-img-shadow
+	youtube.com##ytd-thumbnail
+
+! profile banner
+	youtube.com##yt-image-banner-view-model
+	youtube.com##div#page-header-banner
+
+! navbar
+	youtube.com##ytd-guide-section-renderer
+
+! subscriptions
+	youtube.com##ytd-guide-section-renderer:has-text(/Subscriptions/)
+	youtube.com##ytd-guide-section-renderer [title="Subscriptions"]
+        youtube.com##div#sections > :nth-child(2)
+
+! explore
+	youtube.com##ytd-guide-section-renderer:has-text(/Explore/)
+        youtube.com##div#sections > :nth-child(3)
+
+! more from YouTube
+	youtube.com##ytd-guide-section-renderer:has-text(/More from YouTube/)
+        youtube.com##div#sections > :nth-child(4)
+
+! footer
+	youtube.com##div#footer
+
+
+
+! ----- YOUTUBE MOBILE ----- !
+
+! hide home page
+	m.youtube.com##[tab-identifier="FEwhat_to_watch"]
+
+! hide shorts button
+	m.youtube.com##ytm-pivot-bar-item-renderer:has(.pivot-shorts)
+
+! hide shorts tab
+	m.youtube.com##ytm-rich-section-renderer
+	m.youtube.com##grid-shelf-view-model
+	m.youtube.com##ytm-item-section-renderer:has(ytm-reel-shelf-renderer)
+
+! hide thumbnails
+	m.youtube.com##ytm-thumbnail-cover
+	m.youtube.com##ytm-compact-thumbnail
+	m.youtube.com##ytm-shorts-lockup-view-model > a
+	m.youtube.com##yt-img-shadow
+    
+! hide images
+	m.youtube.com##ytm-post-multi-image-renderer
+	m.youtube.com##ytm-backstage-image-renderer
+! hide "Open App"
+	music.youtube.com##a:has-text("Open App")
+	music.youtube.com##ytmusic-guide-entry-renderer:has-text("Open App")
+    
+! hide "Upgrade"
+	music.youtube.com##ytmusic-guide-entry-renderer:has-text("Upgrade")

@@ -1,5 +1,6 @@
 ! ----- YOUTUBE DESKTOP ----- !
 
+! grayscale the entire page except for the watch page
 youtube.com##ytd-app:not([is-watch-page]):style(
   filter: 
     grayscale(100%) 
@@ -8,6 +9,7 @@ youtube.com##ytd-app:not([is-watch-page]):style(
     !important
 )
 
+! grayscale the masthead
 youtube.com##ytd-masthead div:style(
   filter: 
     grayscale(100%) 
@@ -16,10 +18,25 @@ youtube.com##ytd-masthead div:style(
     !important
 )
 
+! grayscale the content below the media
 youtube.com##ytd-watch-flexy #columns:style(
   filter: 
     grayscale(100%) 
     brightness(85%) 
+    saturate(60%) 
+    !important
+)
+
+! hide the Shorts button
+youtube.com###guide [title="Shorts"]
+
+! ----- YOUTUBE MOBILE ----- !
+
+! grayscale the entire page except for the watch page
+youtube.com##ytm-app:not([is-watch-page]):style(
+  filter: 
+    grayscale(100%) 
+    brightness(100%) 
     saturate(60%) 
     !important
 )

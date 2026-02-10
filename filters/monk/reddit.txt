@@ -10,10 +10,6 @@
 ! Reddit: clean left side bar
 	! reddit.com##flex-left-nav-container
 	reddit.com##reddit-sidebar-nav
-
-! Reddit: hide right side bar
-	reddit.com##+js(user-modify-reddit-css.js)
-	reddit.com###right-sidebar-container
     
 ! Reddit: hide trending on search
 	reddit.com###reddit-trending-searches-partial-container
